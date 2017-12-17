@@ -1,0 +1,18 @@
+[{
+    "position": {
+      "lat": 50.263826,
+      "lng": 19.0170435
+    },
+    "name": "Szlugen Pauzen",
+    "address": "Szlaban \n Przy slaskich",
+    "icon": "assets/markercluster/marker.png"
+} ,
+{
+    "position": {
+      "lat": 50.263826,
+      "lng": 19.0170435
+    },
+    "name": "Szlugen Pauzen",
+    "address": "Szlaban \n Przy slaskich",
+    "icon": "assets/markercluster/marker.png"
+  }]

@@ -12,6 +12,7 @@ import {
 import {Geolocation } from '@ionic-native/geolocation';
 import { NativeGeocoder, NativeGeocoderForwardResult } from '@ionic-native/native-geocoder';
 import { PopoverController } from 'ionic-angular';
+import { AddMeetingPage } from '../AddMetting/Addmeeting';
 
 @Component({
   selector: 'page-mapa',
@@ -53,6 +54,12 @@ export class MapaPage {
         this.mapReady = true;
         this.addCluster(this.dummyData());
       });
+    });
+  }
+  presentPopover(myEvent) {
+    let popover = this.popoverCtrl.create(AddMeetingPage);
+    popover.present({
+      ev: myEvent
     });
   }
     // Create a map after the view is loaded.

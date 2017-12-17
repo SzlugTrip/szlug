@@ -21,6 +21,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { GoogleMaps, Geocoder } from "@ionic-native/google-maps";
 import {Geolocation } from '@ionic-native/geolocation';
 import { NativeGeocoder } from '@ionic-native/native-geocoder';
+import { AddMeetingService } from'../services/addMeeting.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { NativeGeocoder } from '@ionic-native/native-geocoder';
     LoginPage,
     MapsComponent,
     RegisterPage,
-    AddMeetingPage    
+    AddMeetingPage,
+        
   ],
   imports: [
     BrowserModule,
@@ -67,6 +69,7 @@ import { NativeGeocoder } from '@ionic-native/native-geocoder';
     GoogleMaps,
     NativeGeocoder,
     Geocoder,
+    AddMeetingService,
     Geolocation,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]

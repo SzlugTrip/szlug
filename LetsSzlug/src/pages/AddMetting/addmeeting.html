@@ -1,7 +1,20 @@
-<ion-list>
-    <ion-list-header>Ionic</ion-list-header>
-    <button ion-item (click)="close()">Learn Ionic</button>
-    <button ion-item (click)="close()">Documentation</button>
-    <button ion-item (click)="close()">Showcase</button>
-    <button ion-item (click)="close()">GitHub Repo</button>
+<form (ngSubmit)="addMeeting()">
+  <ion-list>
+    <ion-list-header>Dodaj Meeting</ion-list-header>
+    <ion-item>
+      <ion-label stacked>Nazwa</ion-label>
+      <ion-input [(ngModel)]="addmeet.nazwa" name="nazwa"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Adres</ion-label>
+      <ion-input [(ngModel)]="addmeet.adres" name="adres"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Opis</ion-label>
+      <ion-input [(ngModel)]="addmeet.desc" name="desc"></ion-input>
+    </ion-item>
+    <ion-item>
+      <button ion-button large round  type="submit" (click)="close();">DODAJ MEETING</button>
+    </ion-item>
   </ion-list>
+</form>
